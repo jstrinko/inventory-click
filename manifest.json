@@ -1,0 +1,32 @@
+{
+	"manifest_version": 2,
+	"name": "InventoryLab Clicker",
+	"description": "/-/4>< 7/-/3 />/_4/|/37",
+	"version": "1.0",
+	"permissions": [
+		"clipboardRead"
+	],
+	"browser_action": {
+		"default_title": "Y U HAX?",
+		"default_popup": "popup.html"
+	},
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://app.inventorylab.com/*"],
+			"js": ["bower_components/jquery/dist/jquery.min.js", "hax.js"]
+		},
+		{
+			"matches": ["<all_urls>"],
+			"js": ["copy-relay.js"]
+		}
+	],
+	"icons": {
+		"16": "penis16.png",
+		"19": "penis19.png",
+		"48": "penis48.png",
+		"128": "penis128.png"
+	}
+}

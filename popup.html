@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<script src='bower_components/jquery/dist/jquery.min.js'></script>
+		<script src='popup.js'></script>
+		<style>
+			body { width: 200px; }
+			.clipboard_contents {
+				width: 190px;
+				text-overflow: ellipsis;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			Clipboard history logging:
+			<select id='logging_status'>
+				<option value='on'>On</option>
+				<option value='off'>Off</option>
+			</select>
+		</div>
+		<div>
+			<a href="#" id="clear_log">Clean Clipboard History</a>
+		</div>
+		<div>
+			<a href="#" id="save_log">Save Clipboard History</a>
+		</div>
+		<h5>Clipboard Contents</h5>
+		<div class='clipboard_contents'></div>
+	</body>
+</html>
