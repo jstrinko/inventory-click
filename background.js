@@ -27,7 +27,7 @@ chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
 		logging = request.status;
 	}
 	else if (request.event === 'get_logging_status') {
-		return sendRequest({ logging: logging });
+		return sendResponse({ logging: logging });
 	}
 	else if (request.event === 'get_clipboard') {
 		return sendResponse({ clipboard: clip_history });

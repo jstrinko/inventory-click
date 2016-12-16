@@ -1,13 +1,13 @@
 {
 	"manifest_version": 2,
-	"name": "InventoryLab Clicker",
-	"description": "/-/4>< 7/-/3 />/_4/|/37",
+	"name": "InventoryLab Flow",
+	"description": "Improve your InventoryLab workflow",
 	"version": "1.0",
 	"permissions": [
 		"clipboardRead"
 	],
 	"browser_action": {
-		"default_title": "Y U HAX?",
+		"default_title": "InventoryLab Flow",
 		"default_popup": "popup.html"
 	},
 	"background": {
@@ -16,7 +16,7 @@
 	"content_scripts": [
 		{
 			"matches": ["https://app.inventorylab.com/*"],
-			"js": ["bower_components/jquery/dist/jquery.min.js", "hax.js"]
+			"js": ["bower_components/jquery/dist/jquery.min.js", "inject.js"]
 		},
 		{
 			"matches": ["<all_urls>"],
@@ -24,9 +24,9 @@
 		}
 	],
 	"icons": {
-		"16": "penis16.png",
-		"19": "penis19.png",
-		"48": "penis48.png",
-		"128": "penis128.png"
+		"16": "flow.png",
+		"19": "flow.png",
+		"48": "flow.png",
+		"128": "flow.png"
 	}
 }
